@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #607d8b;
+}
+
+#container {
+  position: relative;
+  top: 50px;
+}
+
+
+#cup {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to right , #f9f9f9 , #d9d9d9);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    
+}
