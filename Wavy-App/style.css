@@ -12,3 +12,25 @@ body{
     transform: perspective(500px) rotateX(60deg);
     margin: auto;
 }
+
+
+#loader span{
+    position: absolute;
+    display: block;
+    border: 5px solid  #fff;
+    box-shadow: 0 5px 0 #ccc,
+    inset 0 5px 0 #ccc;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: animate 3s ease-in infinite;
+ }
+ 
+ 
+@keyframes animate{
+    0% , 100%{
+        transform: translateZ(-100px);
+    }
+    50%{
+        transform: translateZ(100px);
+    }
+}
