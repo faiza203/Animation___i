@@ -61,7 +61,7 @@ body {
 #handle {
   position: absolute;
   top: 2em;
-  right: -70px;
+  right: -66px;
   width: 160px;
   height: 180px;
   border: 25px solid #dcdcdc;
@@ -69,4 +69,16 @@ body {
   border-bottom: 25px solid transparent;
   border-radius: 50%;
   transform: rotate(35deg);
+}
+
+#plate {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+  border-radius: 50%;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
 }
