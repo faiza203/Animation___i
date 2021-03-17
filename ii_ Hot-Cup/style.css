@@ -104,3 +104,45 @@ body {
   background: radial-gradient(rgba(0, 0, 0, 0.2), transparent, transparent);
   border-radius: 50%;
 }
+
+#vapours {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+}
+#vapours span {
+  position: relative;
+  display: block;
+  bottom: 50px;
+  margin: 0 2px 50px;
+  min-width: 8px;
+  height: 120px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: vapours 5s linear infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes vapours {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
+}
