@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=QuickSand:wght@300;400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "QuickSand" sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -69,3 +68,43 @@ body::after {
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.calculator span {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 20px;
+}
+
+.calculator span:hover {
+  transition: 0s;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.calculator span:active {
+  transition: 0s;
+  background: #14ff47;
+  color: #192f00;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.clear {
+  grid-column: span 2;
+  width: 150px !important;
+}
+.plus {
+  grid-row: span 2;
+  height: 150px !important;
+}
+
+.equal , .clear{
+  background: rgba(255, 255, 255, 0.2) ;
+}
