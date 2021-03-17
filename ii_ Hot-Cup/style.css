@@ -82,3 +82,14 @@ body {
   border-radius: 50%;
   box-shadow: 0 25px 25px rgba(0, 0, 0, 0.2);
 }
+
+#plate::before {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+  border-radius: 50%;
+}
