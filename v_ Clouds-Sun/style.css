@@ -1,5 +1,60 @@
-body{
-    margin: 0;
-    padding: 0;
-    
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 14em;
+  width: 14em;
+  background: #ff9d00ba;
+  border-radius: 50%;
+}
+
+.ray {
+  border-radius: 50%;
+}
+
+.ray1 {
+  padding: 0.5em 0 0 0.5em;
+  height: 11.5em;
+  width: 11.5em;
+  backdrop-filter: blur(2px);
+}
+
+.ray2 {
+  padding: 0.5em 0 0 0.5em;
+  width: 12em;
+  height: 12em;
+  backdrop-filter: blur(4px);
+}
+.ray3 {
+  padding: 0.5em 0 0 0.5em;
+  width: 12.5em;
+  height: 12.5em;
+  backdrop-filter: blur(6px);
+}
+
+.ray4 {
+  padding: 0.5em 0 0 0.5em;
+  width: 13em;
+  height: 13em;
+  backdrop-filter: blur(10px);
+}
+
+.ray5 {
+  height: 14em;
+  width: 14em;
+  backdrop-filter: blur(16px);
+}
+
+.sun {
+  padding: 0;
+  position: absolute;
+  height: 11em;
+  width: 11em;
+  border-radius: 50%;
 }
