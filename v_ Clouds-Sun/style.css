@@ -58,3 +58,34 @@ body {
   width: 11em;
   border-radius: 50%;
 }
+
+.rays span {
+  display: inline-flex;
+  height: 5em;
+  width: 8px;
+  background: #ff9d00ba;
+  filter: blur(0.7px);
+  border-radius: 5px;
+}
+
+.rays span:nth-child(1) {
+  position: relative;
+  top: -15px;
+  left: 100px;
+  transform: rotate(360deg);
+}
+.rays span:nth-child(2) {
+  position: relative;
+  top: 90px;
+  transform: rotate(340deg);
+}
+/* .rays span:nth-child(3) {
+  position: relative;
+  top: 160px;
+  transform: rotate(320deg);
+}
+.rays span:nth-child(4) {
+  position: relative;
+  top: 160px;
+  transform: rotate(270deg);
+} */
