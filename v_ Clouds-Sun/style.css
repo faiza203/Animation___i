@@ -7,10 +7,16 @@ body {
   align-items: center;
 }
 
+.rays {
+  border-radius: 50%;
+  height: 30em;
+  width: 30em;
+}
+
 .container {
   height: 14em;
   width: 14em;
-  background: #ff9d00ba;
+  background: rgba(255, 238, 0, 1);
   border-radius: 50%;
 }
 
@@ -22,33 +28,33 @@ body {
   padding: 0.5em 0 0 0.5em;
   height: 11.5em;
   width: 11.5em;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
 }
 
 .ray2 {
   padding: 0.5em 0 0 0.5em;
   width: 12em;
   height: 12em;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
 }
 .ray3 {
   padding: 0.5em 0 0 0.5em;
   width: 12.5em;
   height: 12.5em;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(12px);
 }
 
 .ray4 {
   padding: 0.5em 0 0 0.5em;
   width: 13em;
   height: 13em;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(16px);
 }
 
 .ray5 {
   height: 14em;
   width: 14em;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
 }
 
 .sun {
@@ -61,31 +67,123 @@ body {
 
 .rays span {
   display: inline-flex;
-  height: 5em;
+  height: 6em;
   width: 8px;
-  background: #ff9d00ba;
-  filter: blur(0.7px);
+  background: rgba(255, 238, 0, 1);
+  filter: blur(10px);
   border-radius: 5px;
 }
 
 .rays span:nth-child(1) {
   position: relative;
   top: -15px;
-  left: 100px;
+  left: 105px;
   transform: rotate(360deg);
 }
+
 .rays span:nth-child(2) {
   position: relative;
-  top: 90px;
-  transform: rotate(340deg);
+  left: 1.5em;
+  transform: rotate(327deg);
 }
-/* .rays span:nth-child(3) {
+
+.rays span:nth-child(3) {
   position: relative;
-  top: 160px;
-  transform: rotate(320deg);
+  top: 40px;
+  left: -45px;
+  transform: rotate(120deg);
 }
 .rays span:nth-child(4) {
   position: relative;
+  top: 6rem;
+  left: -6em;
+  transform: rotate(285deg);
+}
+
+.rays span:nth-child(5) {
+  position: relative;
   top: 160px;
+  left: -7.5em;
   transform: rotate(270deg);
-} */
+}
+
+.rays span:nth-child(6) {
+  position: relative;
+  top: 14em;
+  left: -125px;
+  transform: rotate(245deg);
+}
+
+.rays span:nth-child(7) {
+  position: relative;
+  top: 17.5em;
+  left: -7em;
+  transform: rotate(50deg);
+}
+
+.rays span:nth-child(8) {
+  position: relative;
+  top: 20em;
+  left: -4.5em;
+  transform: rotate(25deg);
+}
+.rays span:nth-child(9) {
+  position: relative;
+  top: 21.5em;
+  transform: rotate(10deg);
+  left: -1.5em;
+}
+.rays span:nth-child(10) {
+  position: relative;
+  top: 21.5em;
+  left: 1.5em;
+  transform: rotate(350deg);
+}
+
+.rays span:nth-child(11) {
+  position: relative;
+  top: 20.5em;
+  left: 4.5em;
+  transform: rotate(330deg);
+}
+
+.rays span:nth-child(12) {
+  position: relative;
+  top: 18.5em;
+  left: 7em;
+  transform: rotate(140deg);
+}
+
+.rays span:nth-child(13) {
+  position: relative;
+  top: 15em;
+  left: 8.5em;
+  transform: rotate(115deg);
+}
+
+.rays span:nth-child(14) {
+  position: relative;
+  top: 11em;
+  left: 8.5em;
+  transform: rotate(95deg);
+}
+
+.rays span:nth-child(15) {
+  position: relative;
+  top: 6em;
+  left: 7em;
+  transform: rotate(65deg);
+}
+
+.rays span:nth-child(16) {
+  position: relative;
+  top: 2em;
+  left: 60px;
+  transform: rotate(50deg);
+}
+
+.rays span:nth-child(17) {
+  position: relative;
+  left: -1em;
+  transform: rotate(20deg);
+}
