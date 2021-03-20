@@ -69,8 +69,8 @@ body {
   display: inline-flex;
   height: 6em;
   width: 8px;
-  background: rgba(255, 238, 0, 1);
-  filter: blur(10px);
+  background: yellow;
+  filter: blur(18px);
   border-radius: 5px;
 }
 
