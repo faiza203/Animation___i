@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.planet{
+    height: 100vh;
+    width: 50vw;
+}
