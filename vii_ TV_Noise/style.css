@@ -9,4 +9,10 @@ body {
     flex-wrap: wrap;
   }
   
- 
+  .box img {
+    height: 150vh;
+    width: 150vw;
+    animation: rotate 0.00001s infinite ease-in;
+  }
+  
+  
