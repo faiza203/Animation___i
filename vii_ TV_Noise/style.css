@@ -4,3 +4,9 @@ body {
     overflow: hidden;
   }
   
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+ 
