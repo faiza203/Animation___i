@@ -11,12 +11,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .planet {
   display: flex;
   align-items: center;
   height: 100vh;
+  width: 50vw;
   justify-content: center;
   flex-direction: column;
 }
@@ -27,6 +29,18 @@ body {
   font-size: 2.5em;
 }
 
+.loader {
+  animation: rotatePlanet 20s linear infinite;
+}
+
+.loader {
+  height: 35em;
+  width: 35em;
+  background-repeat: no-repeat;
+  top: 100px;
+  background-size: cover;
+  border-radius: 50%;
+}
 .planetImg {
   height: 30em;
   width: 30em;
@@ -34,7 +48,36 @@ body {
   top: 100px;
   background-size: cover;
   border-radius: 50%;
-  animation: rotatePlanet 20s linear infinite;
+}
+
+.loader p {
+  content: " ";
+  position: absolute;
+  top: -40px;
+  left: 51%;
+  height: 15em;
+  width: 0.5em;
+  background-size: 200px 360px;
+  background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4));
+  background-repeat: no-repeat;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+
+.loader::after {
+  content: " ";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  transform: translateX(50%);
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00fff9, 0 0 20px #00fff9, 0 0 30px #00fff9,
+    0 0 40px #00fff9, 0 0 50px #00fff9, 0 0 60px #00fff9, 0 0 70px #00fff9,
+    0 0 80px #00fff9, 0 0 90px #00fff9, 0 0 100px #00fff9;
 }
 
 .earth {
@@ -44,12 +87,11 @@ body {
   background-image: url(mars.jpg);
 }
 
-
-@keyframes rotatePlanet{
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+@keyframes rotatePlanet {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
